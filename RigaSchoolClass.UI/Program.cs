@@ -16,6 +16,8 @@ namespace RigaSchoolClass.UI
 			Console.ReadLine();
 
 			//Comment
+			//Comment
+			//Comment
 			
 		}
 	}
