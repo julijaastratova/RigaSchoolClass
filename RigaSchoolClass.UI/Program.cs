@@ -19,7 +19,7 @@ namespace RigaSchoolClass.UI
 			//Comment
 			//Comment
 			//Hellohowareyou
-			//newnew
+			//newchanges
 			
 		}
 	}
