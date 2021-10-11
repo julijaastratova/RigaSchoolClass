@@ -13,7 +13,7 @@ namespace RigaSchoolClass.UI
 			Console.WriteLine("I also love long walks.");
 			Console.WriteLine("I like 70's-80's rock music.");
 			Console.WriteLine("I am enjoying this .net course, thank you!");
-			Console.WriteLine("new")
+			Console.WriteLine("new");
 			Console.ReadLine();
 
 			//Comment
