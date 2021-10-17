@@ -6,17 +6,15 @@ namespace HomeWorkDataTypes
     {
         static void Main(string[] args)
         {
-            #region Homework Module 4: Month Number
+            #region Homework Module 4: Months
 
             Start:
 
             Console.Write("Please enter the month number: ");
             string inputString = Console.ReadLine();
 
-            if (int.TryParse(inputString, out int result))   
+            if (int.TryParse(inputString, out int month))   
             {
-                int month = Convert.ToInt32(inputString);
-
                 if (month <= 12 && month > 0)
                 {
                     int days = 0;
