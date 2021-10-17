@@ -7,6 +7,66 @@ namespace HomeWorkDataTypes
         static void Main(string[] args)
         {
 
+
+            #region absolute value number
+
+            Console.Write("Input decimal number: ");
+            string inputString1 = Console.ReadLine();
+
+            Console.Write("Input double number: ");
+            string inputString2 = Console.ReadLine();
+
+            Console.Write("Input int16 number: ");
+            string inputString3 = Console.ReadLine();
+
+            Console.Write("Input int32 number: ");
+            string inputString4 = Console.ReadLine();
+
+            Console.Write("Input int64 number: ");
+            string inputString5 = Console.ReadLine();
+
+
+            if (int.TryParse(inputString1, out int result1) &&
+                int.TryParse(inputString2, out int result2) &&
+                int.TryParse(inputString3, out int result3) &&
+                int.TryParse(inputString4, out int result4) &&
+                int.TryParse(inputString5, out int result5))
+            {
+                decimal dec = Convert.ToDecimal(inputString1);
+                dec = Math.Abs(dec);
+                double doub = Convert.ToDouble(inputString2);
+                doub = Math.Abs(doub);
+                short sh = Convert.ToInt16(inputString3);
+                sh = Math.Abs(sh);
+                int integ = Convert.ToInt32(inputString4);
+                integ = Math.Abs(integ);
+                long longg = Convert.ToInt64(inputString5);
+                longg = Math.Abs(longg);
+
+                Console.WriteLine("Your absoulte decimal number is: " + dec);
+                Console.WriteLine("Your absoulte double number is: " + doub);
+                Console.WriteLine("Your absoulte int16 number is: " + sh);
+                Console.WriteLine("Your absoulte int32 number is: " + integ);
+                Console.WriteLine("Your absoulte int64 number is: " + longg);
+            }
+
+            else
+            {
+                Console.WriteLine("One our more inputs were invalid");
+            }
+                
+                Console.ReadLine();
+      
+
+
+
+
+
+
+            #endregion
+
+            #region about me variable homework
+
             decimal height = 1.65m;
             decimal agePoint = 30.10m;
             int age = 30;
@@ -20,7 +80,7 @@ namespace HomeWorkDataTypes
             Console.WriteLine("Today is " + date + ", thank you for your attention!");
             Console.ReadLine();
 
-
+            #endregion
         }
     }
 }
