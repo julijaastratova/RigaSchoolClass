@@ -6,7 +6,100 @@ namespace HomeWorkDataTypes
     {
         static void Main(string[] args)
         {
+            #region Homework Module 4: Month Number
 
+            Start:
+
+            Console.Write("Please enter the month number: ");
+            string inputString = Console.ReadLine();
+
+            if (int.TryParse(inputString, out int result))   
+            {
+                int month = Convert.ToInt32(inputString);
+
+                if (month <= 12 && month > 0)
+                {
+                    int days = 0;
+                    string monthName = "";
+
+                    switch(month)
+                    {
+                        case 1:
+                            days = 31;
+                            monthName = "January";
+                            break;
+                        case 2:
+                            days = 28;
+                            monthName = "February";
+                            break;
+                        case 3:
+                            days = 31;
+                            monthName = "March";
+                            break;
+                        case 4:
+                            days = 30;
+                            monthName = "April";
+                            break;
+                        case 5:
+                            days = 31;
+                            monthName = "May";
+                            break;
+                        case 6:
+                            days = 30;
+                            monthName = "June";
+                            break;
+                        case 7:
+                            days = 31;
+                            monthName = "July";
+                            break;
+                        case 8:
+                            days = 31;
+                            monthName = "August";
+                            break;
+                        case 9:
+                            days = 30;
+                            monthName = "September";
+                            break;
+                        case 10:
+                            days = 31;
+                            monthName = "October";
+                            break;
+                        case 11:
+                            days = 30;
+                            monthName = "November";
+                            break;
+                        case 12:
+                            days = 31;
+                            monthName = "December";
+                            break;
+                        default:
+                            Console.WriteLine("Error! There are only 12 months");
+                            break;
+
+                    }
+
+                    Console.WriteLine("Your entered month is : " + monthName + ". It consists of " + days + " days.");
+                }
+
+                else
+                {
+                    Console.WriteLine("Error! There are only 12 months");
+                    goto Start;
+                }
+            }
+
+            else
+            {
+                Console.WriteLine("Error! There are only 12 months and please use only numbers.");
+                goto Start;
+            }
+
+            Console.ReadLine();
+
+
+
+
+            #endregion
 
             #region Homework Module 3: absolute value number
 
