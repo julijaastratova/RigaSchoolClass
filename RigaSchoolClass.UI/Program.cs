@@ -8,6 +8,291 @@ namespace RigaSchoolClass.UI
 		static void Main(string[] args)
 		{
 
+            #region Press Key A
+
+
+            //Console.Write("Press any key on the keyboard");
+
+            //if (Console.ReadKey().Key == ConsoleKey.A)
+            //{
+            //	Console.WriteLine();
+            //	Console.WriteLine($"You pressed key: A");
+            //}
+            //else
+            //{
+            //	Console.WriteLine("It is not A");
+            //}
+
+
+
+            ////Console.WriteLine($"You pressed any key: {Console.ReadKey().Key}");
+
+            //Console.ReadLine();
+
+
+            #endregion
+
+            #region cards
+
+            //If you don’t have the cards, buy them
+            //Take the card pack in your hands
+            //Open the card pack
+            //Take the cards out of the pack
+            //Mix the cards
+            //Take 6 random cards
+            //Place them in your left hand with the help of the right hand
+            //Organize the cards from smaller value to the bigger value, left to right
+            //Hold the deck of cards loosely between your left thumb and fingers
+
+            #endregion
+
+
+            #region classwork
+
+            //			Console.Write("enter first integer: ");
+            //			string number70 = Console.ReadLine();
+
+            //			Console.Write("enter second integer: ");
+            //			string number71 = Console.ReadLine();
+            //			int result80 = 0;
+            //​
+            //            if (int.TryParse(number71, out result80))
+            //			{
+            //				if (int.TryParse(number71, out int result81))
+            //				{
+            //					string equal = (result80 == result81) ? $"{result80} is equal to {result81}" :
+            //						(result80 > result81) ? $"{result80} is greater than {result81}" :
+            //						$"{result81} is greater than {result80}";
+            //​
+            //                    Console.WriteLine(equal);
+            //				}
+            //				else
+            //				{
+            //					Console.WriteLine("It is not valid input");
+            //				}
+            //			}
+            //			else
+            //			{
+            //				Console.WriteLine("It is not a valid input");
+            //			}
+            //​
+            //            Console.ReadLine();
+
+            Console.Write("Input number 1: ");
+            string inputString8 = Console.ReadLine();
+            if (int.TryParse(inputString8, out int result))
+            {
+                Console.Write("Input number 2: ");
+                string inputString12 = Console.ReadLine();
+                int intInputString4 = int.Parse(inputString12);
+                if (result == intInputString4)
+                {
+                    Console.WriteLine($"{result} and {intInputString4} are equal");
+                }
+                else
+                {
+                    Console.WriteLine($"{result} and {intInputString4} are unequal");
+                }
+
+            }
+
+            else
+            {
+                Console.WriteLine("Input is invalid");
+            }
+
+            Console.ReadLine();
+
+
+            //Console.Write("Input number 1: ");
+            //string inputString3 = Console.ReadLine();
+            //int number10 = Convert.ToInt16(inputString3);
+
+            //Console.Write("Input number 2: ");
+            //string inputString4 = Console.ReadLine();
+            //int number11 = Convert.ToInt16(inputString4);
+
+            //string result1 = (number10 == number11) ? $"{ number10 } is equal to { number11 }" : $"{ number10 } is not equal to { number11 }";
+
+
+            //Console.WriteLine(result1);
+
+            //Console.ReadLine();
+
+            Console.Write("Please input a year: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            string trOrFalse = ((a % 100 == 0) && (a % 4 == 0)) ? $"{a} is a leap year " :
+                (a % 4 == 0) ? $"{a} : is a leap year " :
+                $"{a} is not a leap year";
+            Console.WriteLine(trOrFalse);
+            Console.ReadLine();
+
+
+   //         Console.WriteLine("Input a year: ");
+			//string year = Console.ReadLine();
+			//int intYear = int.Parse(year);
+
+			//string trueOrFalse = intYear % 4 == 0 ? $"{intYear}: Leap year" : $"{intYear}: Not a leap year";
+
+			//Console.WriteLine(trueOrFalse);
+			//Console.ReadLine();
+
+
+
+
+			#endregion
+
+			#region Math basic operations
+
+			//int a = int.MaxValue;
+			//double b = double.MaxValue;
+
+			//int a = 100;
+
+			//Console.WriteLine(a++); //100
+			//Console.WriteLine(a++); //101
+			//Console.WriteLine(a++); //102
+			//Console.WriteLine(a++); //103
+			//Console.WriteLine(a++); //104
+			//Console.WriteLine(a++); //105
+
+			//int b = 100;
+
+			//Console.WriteLine(b--); //100
+			//Console.WriteLine(b--); //99
+			//Console.WriteLine(b--); //98
+			//Console.WriteLine(b--); //97
+			//Console.WriteLine(b--); //96
+			//Console.WriteLine(b--); //95
+
+			//int a = 100;
+
+			//int[] massive =  { 1, 10, 3, 89, 77, 66};
+
+			//for(int i = 0; i<massive.Length; i++)
+   //         {
+			//	Console.WriteLine(massive[i]);
+			//}
+
+    //        for (int i = 0; i < 5; i++)
+    //        {
+    //            Console.WriteLine(i);
+
+				////if (i <= 3)
+				////	break;
+
+    //        };
+
+
+            //Console.WriteLine(Math.PI);
+
+            //Random random = new Random();
+            //Console.WriteLine(random.Next(0, 10));
+
+            //Console.WriteLine(Math.Round(5.6));
+
+            //Console.WriteLine(Math.Sqrt(64));
+
+            //int number_1 = 10;
+            //number_1 *= 10;
+            //number_1 /= 10;
+
+            //Console.WriteLine(number_1);
+
+            //Console.WriteLine(number_1 > 1 ? true : false);
+            //Console.WriteLine(number_1 >= 1 ? true : false);
+
+            //if (number_1 >= 1)
+            //{
+            //	Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //	Console.WriteLine(false);
+            //}
+			 
+			//if true show 1, if false show 2
+   //         int number_2 = number_1 == 1 ? 1 : 2;
+
+   //         if (number_1 == 1)
+   //         {
+			//	number_2 = 1;
+   //         }
+   //         else
+   //         {
+			//	number_2 = 2;
+   //         }
+
+			//Console.WriteLine(number_2);
+			Console.ReadLine();
+
+			#endregion
+
+			#region MatchClassOperators
+
+			//Console.WriteLine("Input number: ");
+
+			//string number = Console.ReadLine();
+			//int evenNumber = 0;
+			//int oddNumber = 0;
+			//// value % 2 != 0
+			//// value % 2 == 0
+
+			//Console.WriteLine($"Even number is: {evenNumber}");
+			//Console.WriteLine($"Odd number is {oddNumber}");
+			//Console.ReadLine();
+
+			while (new ConsoleKeyInfo().Key != ConsoleKey.A)
+            {
+				Console.Write("Input number: ");
+				string inputString = Console.ReadLine();
+				//int integerVariable1 = int.Parse(inputString);
+				decimal number = Convert.ToDecimal(inputString);
+                //integerVariable1 = (int)number;
+                // value % 2 != 0 Odd number
+                // value % 2 == 0 Even number
+                // expression ? value_1 : value_2
+
+                //question ? //       //TRUE//                   //FALSE//   
+                //string truOrFalse = (10 > 1) ? "It is greater than 1" : "It is not greater than one";
+                //bool trFalse = (number > 1) ? true : false;
+
+                string truOrFalse = (number > 1) ? $"{number}: is odd number"
+                    : $"{number} is odd even number";
+				//string truOrFalse = (number % 2 ! = 0) ? $"{number}: is odd number"
+				//   : $"{number} is odd even number";
+
+				//string truOrFalse = number % 2 != 0 ? "Odd" : "Even";
+
+				Console.WriteLine(truOrFalse); 
+            }
+
+			#endregion
+
+			#region Operators
+
+			//string strVariable = "Test";
+			//int numberVariable = 1;
+
+			//string var1 = "1";
+			//var1 = strVariable;
+
+			////Operator &&
+			//bool boolVariableEndOperator = numberVariable == 1 && strVariable = "Test"; //true + true = true ; false + false = true; true + false = false
+
+			////Operator ||
+			//bool boolVariableOrOperator = numberVariable == 12 || strVariable = "Test negative" || strVariable = "Test";   //false + false + true = true
+
+			////Operator !
+			//bool boolVariableNotOperator = numberVariable != 1;     //false
+
+			////Relation Operators < > != <=
+			//bool relationOpVariable1 = 1 > 2;     //false
+			//bool relationOpVariable2 = 2 >= 2;    //true
+			//bool relationOpVariable3 = 1 <= 2;    //true
+			
+			#endregion
+
 			#region Casting
 
 			string strNumber = "111";
@@ -19,8 +304,8 @@ namespace RigaSchoolClass.UI
 			decimal decimalVariable = 1.3m;
 			string stringVariable = "100";
 
-			string result = stringVariable + integerVariable.ToString();
-			Console.WriteLine($"Casting result: {result}");
+			string result90 = stringVariable + integerVariable.ToString();
+			Console.WriteLine($"Casting result: {result90}");
 
 			int intdecimalVariable = (int)decimalVariable;
 			int intlongVariable = (int)decimalVariable;
