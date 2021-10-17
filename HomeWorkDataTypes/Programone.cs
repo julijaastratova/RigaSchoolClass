@@ -8,7 +8,7 @@ namespace HomeWorkDataTypes
         {
 
 
-            #region absolute value number
+            #region Homework Module 3: absolute value number
 
             Console.Write("Input decimal number: ");
             string inputString1 = Console.ReadLine();
