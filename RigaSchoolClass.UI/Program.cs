@@ -7,6 +7,11 @@ namespace RigaSchoolClass.UI
 		//this is a method
 		static void Main(string[] args)
 		{
+            #region function
+
+
+
+            #endregion
 
             #region Press Key A
 
@@ -373,6 +378,8 @@ namespace RigaSchoolClass.UI
 
             #endregion
 
+
+            Console.ReadLine();
         }
     }
 }
