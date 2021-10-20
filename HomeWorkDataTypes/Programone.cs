@@ -6,50 +6,17 @@ namespace HomeWorkDataTypes
     {
         static void Main(string[] args)
         {
-            #region Homework Module 4.2
 
-            Start0:
+        #region Homework module 4.2 edited
+
+        Start0:
             Console.WriteLine("Calculate circle area - press 1, calculate square area - press 2");
             string choice = Console.ReadLine();
-            if(int.TryParse(choice, out int madeChoice))
+            if (int.TryParse(choice, out int madeChoice))
             {
                 if (madeChoice == 1 || madeChoice == 2)
                 {
-                    switch (madeChoice)
-                    {
-                        case 1:
-                            Start1:
-                            Console.WriteLine("Please input radius:");
-                            string radius = Console.ReadLine();
-                            if (double.TryParse(radius, out double enteredRadius))
-                            {
-                                getCircleArea(enteredRadius);
-                            }
-
-                            else
-                            {
-                                Console.WriteLine("Please enter radius using numbers");
-                                goto Start1;
-                            }
-
-                            break;
-                        case 2:
-                            Start2:
-                            Console.WriteLine("Please input side length:");
-                            string sideLength = Console.ReadLine();
-                            if (double.TryParse(sideLength, out double enteredSideLength))
-                            {
-                                getSquareArea(enteredSideLength);
-                            }
-
-                            else
-                            {
-                                Console.WriteLine("Please enter side length using numbers");
-                                goto Start2;
-                            }
-
-                            break;
-                    }
+                    runChoice(madeChoice);
                 }
 
                 else
@@ -66,21 +33,153 @@ namespace HomeWorkDataTypes
             }
 
             Console.ReadLine();
-            
-            
-            
+
+
+
+
+
             static void getCircleArea(double rad)
             {
                 rad += rad;
                 rad *= Math.PI;
                 Console.WriteLine("Your circle area is: " + rad);
             }
-          
+
             static void getSquareArea(double sL)
             {
                 sL *= sL;
                 Console.WriteLine("Your square area is: " + sL);
             }
+
+
+            static void getcircleAreaResult()
+            {
+                Start1:
+                Console.WriteLine("Please input radius:");
+                string radius1 = Console.ReadLine();
+                if (double.TryParse(radius1, out double enteredRadius))
+                {
+                    getCircleArea(enteredRadius);
+                }
+
+                else
+                {
+                    Console.WriteLine("Please enter radius using numbers");
+                    goto Start1;
+                }
+            }
+
+
+            static void getSquareAreaResult()
+            {
+                Start2:
+                Console.WriteLine("Please input side length:");
+                string sideLength1 = Console.ReadLine();
+                if (double.TryParse(sideLength1, out double enteredSideLength))
+                {
+                    getSquareArea(enteredSideLength);
+                }
+
+                else
+                {
+                    Console.WriteLine("Please enter side length using numbers");
+                    goto Start2;
+                }            
+            }
+
+
+
+            static void runChoice(int choice)
+            {
+                switch (choice)
+                {
+                    case 1:
+                        getcircleAreaResult();
+                        break;
+                    case 2:
+                        getSquareAreaResult();
+                        break;
+                }
+            }
+
+
+        #endregion
+
+        #region Homework Module 4.2
+
+        //Start0:
+        //    Console.WriteLine("Calculate circle area - press 1, calculate square area - press 2");
+        //    string choice = Console.ReadLine();
+        //    if(int.TryParse(choice, out int madeChoice))
+        //    {
+        //        if (madeChoice == 1 || madeChoice == 2)
+        //        {
+        //            switch (madeChoice)
+        //            {
+        //                case 1:
+        //                    Start1:
+        //                    Console.WriteLine("Please input radius:");
+        //                    string radius = Console.ReadLine();
+        //                    if (double.TryParse(radius, out double enteredRadius))
+        //                    {
+        //                        getCircleArea(enteredRadius);
+        //                    }
+
+        //                    else
+        //                    {
+        //                        Console.WriteLine("Please enter radius using numbers");
+        //                        goto Start1;
+        //                    }
+
+        //                    break;
+        //                case 2:
+        //                    Start2:
+        //                    Console.WriteLine("Please input side length:");
+        //                    string sideLength = Console.ReadLine();
+        //                    if (double.TryParse(sideLength, out double enteredSideLength))
+        //                    {
+        //                        getSquareArea(enteredSideLength);
+        //                    }
+
+        //                    else
+        //                    {
+        //                        Console.WriteLine("Please enter side length using numbers");
+        //                        goto Start2;
+        //                    }
+
+        //                    break;
+        //            }
+        //        }
+
+        //        else
+        //        {
+        //            Console.WriteLine("Please enter 1 or 2");
+        //            goto Start0;
+        //        }
+        //    }
+
+        //    else
+        //    {
+        //        Console.WriteLine("Please enter 1 or 2");
+        //        goto Start0;
+        //    }
+
+        //    Console.ReadLine();
+
+
+
+        //    static void getCircleArea(double rad)
+        //    {
+        //        rad += rad;
+        //        rad *= Math.PI;
+        //        Console.WriteLine("Your circle area is: " + rad);
+        //    }
+
+        //    static void getSquareArea(double sL)
+        //    {
+        //        sL *= sL;
+        //        Console.WriteLine("Your square area is: " + sL);
+        //    }
 
 
         #endregion
