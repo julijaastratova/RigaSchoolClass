@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 
 namespace HomeWorkDataTypes
 {
@@ -7,7 +9,58 @@ namespace HomeWorkDataTypes
         static void Main(string[] args)
         {
 
-        #region Homework module 4.2 edited
+
+            #region Homwork module 4.4
+
+            int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
+            int[] Array2 = new int[10];
+
+            Array.Copy(Array1, Array2, 10);
+
+            foreach (int value in Array2)
+            {
+                Console.WriteLine(value);
+            }
+            Console.ReadLine();
+
+            #endregion
+
+            #region Homework module 4.3
+            int[] arr = {12345, 6789, 101112, 1314, 15};
+            int sum0 = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum0 += arr[i];
+            }
+
+            Console.WriteLine(sum0);
+            Console.ReadLine();
+            #endregion
+
+            #region Homerwork module 4.3.1
+        //int[] array = { 2, 4, 6, 8, 10 };
+
+        //int sum1 = 0;
+        //foreach (int item in array)
+        //{
+        //    sum1 += item;
+        //}
+
+        //Console.WriteLine(sum1);
+        #endregion
+
+            #region Homework module 4.3.2
+
+            //int[] nrArray = { 3, 5, 7, 9, 11 };
+
+            //int sum = 0;
+            //Array.ForEach(nrArray, i => sum += i);
+
+            //Console.WriteLine(sum);
+
+            #endregion
+
+            #region Homework module 4.2 edited
 
         Start0:
             Console.WriteLine("Calculate circle area - press 1, calculate square area - press 2");
@@ -105,7 +158,7 @@ namespace HomeWorkDataTypes
 
         #endregion
 
-        #region Homework Module 4.2
+            #region Homework Module 4.2
 
         //Start0:
         //    Console.WriteLine("Calculate circle area - press 1, calculate square area - press 2");
@@ -185,7 +238,7 @@ namespace HomeWorkDataTypes
         #endregion
 
 
-        #region Homework Module 4: Months
+            #region Homework Module 4: Months
 
         Start:
 

@@ -1,15 +1,185 @@
 ﻿using System;
+using System.Linq;
 
 namespace RigaSchoolClass.UI
 {
 	class Program
 	{
-		//this is a method
-		static void Main(string[] args)
+        //this is a method
+        static void Main(string[] args)
 		{
-            #region function
+
+            #region Array
+
+            object[] objectArr = { 1, "string", 2.3, '\u006A' };
+            foreach (var objectItem in objectArr)
+            {
+                if (objectItem is int item)
+                {
+                    Console.Write($"Integer value is: {item}");
+                }
+                if (objectItem is string item1)
+                {
+                    Console.Write($"String value is: {item1}");
+                }
+            }
+
+            //Option 2
+            int[] intArray = { 1, 2, 3, 4, 5 };
+            string[] stringArray = { "name", "surname" };
+            double[] doubleArr = { 2.3, 22, 3.4 };
+            #endregion
+            #region Loops
+            #region for loop
+            for (int i = 0; i < 5; i++)
+            {
+                //Console.WriteLine($"For loop iteration number: {i}");
+                //break;
+                //continue;
+            }
+
+            int[] integerArray = { 1, 2, 3, 4, 5 };
+            int val = integerArray[2];
+            for (int i = 0; integerArray.Length > i; i++)
+            {
+                Console.WriteLine($"For loop iteration number: {integerArray[i]}");
+                //break;
+                //continue;
+            }
+            for (int i = 0; stringArray.Length > i; i++)
+            {
+                Console.WriteLine($"For loop iteration number: {integerArray[i]}");
+                //break;
+                //continue;
+            }
+            #endregion
+            #region while loop
+            int number = 0;
+
+            while (number < 5)
+            {
+                Console.WriteLine(number++);
+            }
+            #endregion
+            #region foreach
+            double[] doubleArray = new double[] { 2, 3, 4, 5 };
+            var lenght = doubleArray.Length;
+            foreach (var doubleItem in doubleArray)
+            {
+                Console.WriteLine($"Foreach iteration number: {doubleItem}");
+            }
+            #endregion
+
+            #endregion
+
+            #region classwork1array
+
+            //Option 1
+            //int[] intArray;
+            //intArray = new int[6];
+
+            //intArray[0] = 0;
+            //intArray[1] = 1;
+            //intArray[2] = 2;
+            //intArray[3] = 3;
+            //intArray[4] = 4;
+            //intArray[5] = 5;
+
+            //Option 2
+            //int[] testArray = { 1, 2, 3, 4, 5 };
+            //string[] stringArray = { "name", "surname"};
+            //double[] doubleArr = { 2.3, 22, 3.4 };
+
+            //string[] stringArray1 = { "first element", "second element" };
+            //Console.WriteLine($"Here is the: {stringArray1[1]}");
+            //Console.ReadLine();
+
+            //string[] myName = {"j", "u", "l", "i", "j", "a"};
+            //Console.WriteLine(myName[1]);
+
+            //string[] stringArray2 = { "one", "two" };
+            //for (int i = 0; i < stringArray2.Length; i++)
+            //{
+            //    if (i==1)
+            //    {
+            //        Console.WriteLine(stringArray2[i]);
+            //    }
+            //}
+            //Console.ReadLine();
 
 
+
+            #endregion
+
+            #region foreachclasswork
+            //iterating each number
+
+            //int[] integerArray = new int[10];
+            //integerArray[0] = 1;
+
+            //double[] doubleArray = new double[] { 2, 3, 4, 5 };
+            //var length = doubleArray.Length;
+
+            //foreach (var doubleItem in doubleArray)
+            //{
+            //    Console.WriteLine($"Foreach iteration number {doubleItem}");
+            //}
+
+            #endregion
+
+            #region for loopclasswork
+
+            //for (int i = 0; i<5; i++)
+            //{
+            //    Console.WriteLine($"For loop iteration number: {i}");
+            //}
+
+            //int[] integerArray1 = {1, 2, 3, 4, 5};
+
+            //for (int i = 0; integerArray1.Length > i; i++)
+            //{
+            //    Console.WriteLine($"For loop iteration number: {integerArray1[i]}");
+            //}
+
+
+            #endregion
+
+            #region while loopclasswork
+
+            //int number = 0;
+            //while (number <5)
+            //{
+            //    Console.WriteLine(number++);
+            //}
+
+            #endregion
+
+            #region loopsclasswork
+
+            //bool finish = false;
+            //int numb = 0;
+
+            //while (!finish)
+            //{
+            //    Console.WriteLine($"Iteration number: {numb++}");
+            //    if (finish == false)
+            //    {
+            //        finish = true;
+            //    }
+            //}
+
+
+            ////this works infinitely
+            //int numb = 0;
+            //while (true)
+            //{
+            //    Console.WriteLine($"Iteration number: {numb++}");
+            //}
+
+
+            //string exitOption = "Continue";
+
+            //while (exitOption == "Continue")
 
             #endregion
 
@@ -247,30 +417,30 @@ namespace RigaSchoolClass.UI
 			//Console.WriteLine($"Odd number is {oddNumber}");
 			//Console.ReadLine();
 
-			while (new ConsoleKeyInfo().Key != ConsoleKey.A)
-            {
-				Console.Write("Input number: ");
-				string inputString = Console.ReadLine();
-				//int integerVariable1 = int.Parse(inputString);
-				decimal number = Convert.ToDecimal(inputString);
-                //integerVariable1 = (int)number;
-                // value % 2 != 0 Odd number
-                // value % 2 == 0 Even number
-                // expression ? value_1 : value_2
+			//while (new ConsoleKeyInfo().Key != ConsoleKey.A)
+   //         {
+			//	Console.Write("Input number: ");
+			//	string inputString = Console.ReadLine();
+			//	//int integerVariable1 = int.Parse(inputString);
+			//	decimal number = Convert.ToDecimal(inputString);
+   //             //integerVariable1 = (int)number;
+   //             // value % 2 != 0 Odd number
+   //             // value % 2 == 0 Even number
+   //             // expression ? value_1 : value_2
 
-                //question ? //       //TRUE//                   //FALSE//   
-                //string truOrFalse = (10 > 1) ? "It is greater than 1" : "It is not greater than one";
-                //bool trFalse = (number > 1) ? true : false;
+   //             //question ? //       //TRUE//                   //FALSE//   
+   //             //string truOrFalse = (10 > 1) ? "It is greater than 1" : "It is not greater than one";
+   //             //bool trFalse = (number > 1) ? true : false;
 
-                string truOrFalse = (number > 1) ? $"{number}: is odd number"
-                    : $"{number} is odd even number";
-				//string truOrFalse = (number % 2 ! = 0) ? $"{number}: is odd number"
-				//   : $"{number} is odd even number";
+   //             string truOrFalse = (number > 1) ? $"{number}: is odd number"
+   //                 : $"{number} is odd even number";
+			//	//string truOrFalse = (number % 2 ! = 0) ? $"{number}: is odd number"
+			//	//   : $"{number} is odd even number";
 
-				//string truOrFalse = number % 2 != 0 ? "Odd" : "Even";
+			//	//string truOrFalse = number % 2 != 0 ? "Odd" : "Even";
 
-				Console.WriteLine(truOrFalse); 
-            }
+			//	Console.WriteLine(truOrFalse); 
+   //         }
 
 			#endregion
 
@@ -380,6 +550,133 @@ namespace RigaSchoolClass.UI
 
 
             Console.ReadLine();
+        }
+
+        #region Functions
+        static void IterateLoop()
+        {                //0, 1
+            int[,] array = {{11, 23, 44}, {34, 422, 332}}; //i<2 means two elements, j<3 means 3 elements
+            //string[,] strArray = {{"name", "surname"}, {"age", "weight"}}; //i<2 ; j<2
+
+​
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+
+                {
+                    Console.WriteLine(array[i, j]);
+                }
+            }
+        }
+
+
+
+        //static void IterateLoop()
+        //{
+        //    int[] array = { 1, 2, 3, 4, 5 };
+
+        //    foreach (var itemInArray in array)
+        //    {
+        //        Console.WriteLine(itemInArray);
+        //    }
+        //}
+
+        //static void OutOfRange()
+        //{
+        //    int[] arr = {1, 2, 3};
+
+        //    for(int i = 0; i > arr.Length; i++)
+        //    {
+        //        Console.WriteLine($"Array item value: {arr[i]}");
+        //    }
+        //}
+
+
+
+        static void OutOfRange()
+        {
+            int[] arr = { 1, 2, 3 };
+
+            //int[] arr1 = new int[10];*/ //empty array, [10] is the length of the array
+            int variable = 1;
+
+            for (int i = 0; i < 3; i++)
+            {
+                //arr = {1, 2, 3}
+                arr[i] = i++;
+            }
+
+            for (int i = 0; i < 5; i++) ;
+
+            //int[] arr = { 1, 2, 3 };
+
+            //for (int i = 0; i < 5; i++)
+            //    if (arr.Length >= i)
+            //{
+            //    Console.WriteLine($"Array item value: {arr[i]}");
+            //}
+            //    else
+            //    {
+            //        break;
+            //    }
+        }
+        #endregion
+
+        static void FillArray()
+        {
+            int[] intArr = new int[10];
+            //string[] stringArr = new string[10];
+            for (int i = 0; i < 10; i++)
+            {
+                intArr[i] = i;
+                //stringArr[i] = $"Item number: {i}";
+            }
+        }
+
+        static void FindMaxNumber()
+        {
+            //static void Main(string[] args)
+            //{
+            //    int[] array = { 1, 2, 3, 10000 };
+            //    {
+            //        Console.WriteLine(array.Max());
+            //    }
+            //    Console.ReadKey();
+
+            {
+                int[] intArray = { 123123213, 231223, 2222, 34334 };
+                var biggestVal = intArray.Max();
+                var smallestVal = intArray.Min();
+            }
+
+
+        }
+
+        static void ReverseArra()
+        {
+            //int[] arr = { 1, 2, 3, 4 }; //4, 3, 2, 1
+
+            //arr.Reverse();
+
+        }
+
+        static void FindElementInsideOfArray()
+        {
+            string[] stringArray = { "fox_1", "cat", "dog_1" };
+
+            foreach (var strVal in stringArray)
+            {
+                //strVal.EndsWith("_1");
+                //if(strVal.EndsWith("_1"))
+                if (strVal.StartsWith("f"))
+                {
+                    Console.Write(strVal);
+                }
+            }
+
+            Console.ReadLine();
+        }
+
         }
     }
 }
