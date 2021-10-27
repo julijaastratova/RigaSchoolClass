@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork", "..\..\..\4th le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkDataTypes", "HomeWorkDataTypes\HomeWorkDataTypes.csproj", "{2FA2E7D8-4E8A-4E3B-B27A-032FA53AD35B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Function", "Function\Function.csproj", "{7798CF27-E929-49A7-B153-3B4AA09F6F9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Function", "Function\Function.csproj", "{7798CF27-E929-49A7-B153-3B4AA09F6F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module 2", "Module 2\Module 2.csproj", "{8A19F409-1DD8-4651-8E0D-158C769F6918}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7798CF27-E929-49A7-B153-3B4AA09F6F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7798CF27-E929-49A7-B153-3B4AA09F6F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7798CF27-E929-49A7-B153-3B4AA09F6F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A19F409-1DD8-4651-8E0D-158C769F6918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A19F409-1DD8-4651-8E0D-158C769F6918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A19F409-1DD8-4651-8E0D-158C769F6918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A19F409-1DD8-4651-8E0D-158C769F6918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
