@@ -40,7 +40,7 @@ namespace HomeWorkDataTypes
 
             #region Homwork module 4.4
 
-int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
+            int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
             int[] Array2 = new int[10];
 
             Array.Copy(Array1, Array2, 10);
@@ -66,16 +66,16 @@ int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
             #endregion
 
             #region Homerwork module 4.3.1
-        //int[] array = { 2, 4, 6, 8, 10 };
+            //int[] array = { 2, 4, 6, 8, 10 };
 
-        //int sum1 = 0;
-        //foreach (int item in array)
-        //{
-        //    sum1 += item;
-        //}
+            //int sum1 = 0;
+            //foreach (int item in array)
+            //{
+            //    sum1 += item;
+            //}
 
-        //Console.WriteLine(sum1);
-        #endregion
+            //Console.WriteLine(sum1);
+            #endregion
 
             #region Homework module 4.3.2
 
@@ -90,7 +90,7 @@ int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
 
             #region Homework module 4.2 edited
 
-        Start0:
+            Start0:
             Console.WriteLine("Calculate circle area - press 1, calculate square area - press 2");
             string choice = Console.ReadLine();
             if (int.TryParse(choice, out int madeChoice))
@@ -184,11 +184,11 @@ int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
             }
 
 
-        #endregion
+            #endregion
 
             #region Homework Module 4.2
 
-        //Start0:
+        //    Start0:
         //    Console.WriteLine("Calculate circle area - press 1, calculate square area - press 2");
         //    string choice = Console.ReadLine();
         //    if(int.TryParse(choice, out int madeChoice))
@@ -263,12 +263,11 @@ int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
         //    }
 
 
-        #endregion
-
+            #endregion
 
             #region Homework Module 4: Months
 
-        Start:
+            Start:
 
             Console.Write("Please enter the month number: ");
             string inputString = Console.ReadLine();
