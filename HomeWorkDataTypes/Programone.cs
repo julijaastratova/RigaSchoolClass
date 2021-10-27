@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 
 namespace HomeWorkDataTypes
@@ -8,11 +9,38 @@ namespace HomeWorkDataTypes
     {
         static void Main(string[] args)
         {
+            #region Homework module 5
+            //CheckPhoneNumber("+35 392-022-194") → true 
+            //CheckPhoneNumber("+958 28492-503") → false
+            string exitOption = "Continue";
+            while (exitOption == "Continue")
+            {           
+                Console.Write("Please enter the number: ");
 
+                string inputNumber = Console.ReadLine();
+
+                string pattern = @"^[+]\d+\s\d+[-]\d+[-]\d+";
+
+                var rgx = new Regex(pattern);
+
+                Match output = Regex.Match(inputNumber, pattern);
+
+                if (rgx.IsMatch(inputNumber))
+                {
+                    Console.WriteLine($"True");
+                }
+                else
+                {
+                    Console.WriteLine($"False");
+                }
+            }
+
+            Console.ReadLine();
+            #endregion
 
             #region Homwork module 4.4
 
-            int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
+int[] Array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
             int[] Array2 = new int[10];
 
             Array.Copy(Array1, Array2, 10);

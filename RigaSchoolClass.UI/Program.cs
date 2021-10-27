@@ -677,6 +677,6 @@ namespace RigaSchoolClass.UI
             Console.ReadLine();
         }
 
-        }
     }
-}
+    }
+
