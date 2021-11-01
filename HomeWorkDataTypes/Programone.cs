@@ -14,7 +14,7 @@ namespace HomeWorkDataTypes
             //CheckPhoneNumber("+958 28492-503") → false
             string exitOption = "Continue";
             while (exitOption == "Continue")
-            {           
+            {
                 Console.Write("Please enter the number: ");
 
                 string inputNumber = Console.ReadLine();
