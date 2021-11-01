@@ -8,8 +8,8 @@ namespace Homework_module_6
 {
     class ArrayOperator
     {
-        public int[] array1;
-        public int[] array2;
+        private int[] array1;
+        private int[] array2;
 
         public ArrayOperator(int[] array1, int arrSize2)
         {
